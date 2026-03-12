@@ -15,7 +15,7 @@ class Program
         m1.duration = "3h 30m";
         m1.Display();
 
-        director.d1 = new director("peter jackson", "new zealand");
+        director.d1 = new director("peter","jackson", "new zealand");
         d1.Display();
     }
 }
