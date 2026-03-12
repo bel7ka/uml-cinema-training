@@ -1,3 +1,5 @@
+using System.Dynamic;
+
 public class Movie
 {
     private string title;
@@ -6,14 +8,16 @@ public class Movie
     {
         Console.WriteLine($"Title: {title}, Duration: {duration}");
     }
+
     public string title
     {
-        get { return title;}
-        set { title = value;}
+        get { return title; }
+        set { title = value; }
     }
     public string duration
     {
-        get{ return duration; }
-        set { duration = value;}
+        get { return duration; }
+        set { duration = value; }
     }
+
 }
