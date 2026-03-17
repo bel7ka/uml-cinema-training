@@ -9,15 +9,21 @@ public class Movie
         Console.WriteLine($"Title: {title}, Duration: {duration}");
     }
 
-    public string title
+    public string GetTitle()
     {
-        get { return title; }
-        set { title = value; }
+        return title;
     }
-    public string duration
+    public void SetTitle(string value)
     {
-        get { return duration; }
-        set { duration = value; }
+        title = value;
+    }
+    public string GetDuration()
+    {
+        return duration;
+    }
+    public void SetDuration(string value)
+    {
+        duration = value;
     }
 
 }
