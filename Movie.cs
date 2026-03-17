@@ -4,20 +4,36 @@ public class Movie
 {
     private string title;
     private string duration;
+    private Director director;
     public void Display()
     {
         Console.WriteLine($"Title: {title}, Duration: {duration}");
     }
 
-    public string title
+
+    public string GetTitle()
     {
-        get { return title; }
-        set { title = value; }
+        return title;
     }
-    public string duration
+    public void SetTitle(string value)
     {
-        get { return duration; }
-        set { duration = value; }
+        title = value;
+    }
+    public string GetDuration()
+    {
+        return duration;
+    }
+    public void SetDuration(string value)
+    {
+        duration = value;
+    }
+    public Director GetDirector()
+    {
+        return director;
+    }
+    public void SetDirector(Director value)
+    {
+        director = value;
     }
 
 }

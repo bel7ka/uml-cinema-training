@@ -10,12 +10,16 @@ class Program
 {
     static void Main(string[] args)
     {
-        movie m1 = new movie();
-        m1.title = "lord of the rings";
-        m1.duration = "3h 30m";
-        m1.Display();
+        Movie m1 = new Movie();
+        m1.SetTitle("lord of the rings\n");
+        m1.SetDuration("3h 30m");
 
-        director.d1 = new director("peter","jackson", "new zealand");
+        Director d1 = new Director("peter.", "jackson", "new zealand");
+        m1.SetDirector(d1);
+
+        Console.WriteLine($"\nDirector&: {d1.GetFirstName()} {d1.GetLastName()}, Title: {m1.GetTitle()}");
+        m1.Display();
         d1.Display();
+
     }
 }

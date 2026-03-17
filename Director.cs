@@ -5,25 +5,43 @@ public class Director
     private string firstName;
     private string lastName;
     private string country;
+
+    public Director(string firstName, string lastName, string country)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.country = country;
+    }
     public void Display()
     {
         Console.WriteLine($"Director: {firstName} {lastName}, Country: {country}");
     }
 
-    public string firstName
+    public string GetFirstName()
     {
-        get { return firstName; }
-        set { firstName = value; }
+        return firstName;
     }
-    public string lastName
+    public void SetFirstName(string value)
     {
-        get { return lastName; }
-        set { lastName = value; }
+        firstName = value;
     }
-    public string country
+
+    public string GetLastName()
     {
-        get { return country;}
-        set {country = value;}
+        return lastName;
+    }
+    public void SetLastName(string value)
+    {
+        lastName = value;
+    }
+
+    public string GetCountry()
+    {
+        return country;
+    }
+    public void SetCountry(string value)
+    {
+        country = value;
     }
 
 }
